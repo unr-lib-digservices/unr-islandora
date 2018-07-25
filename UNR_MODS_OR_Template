@@ -1,0 +1,55 @@
+ <!-- For Prefix -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+
+<!-- For Row Template -->
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+      <identifier>{{jsonize(cells["identifier"].value).replace('"', '')}}</identifier>
+      <titleInfo>
+         <title>{{jsonize(cells["titleInfo"].value).replace('"', '')}}</title>
+      </titleInfo>
+      <typeOfResource>{{jsonize(cells["typeOfResource"].value).replace('"', '')}}</typeOfResource>
+      <originInfo>
+            <dateIssued>{{jsonize(cells["dateIssued"].value).replace('"', '')}}</dateIssued>
+            <publisher>{{jsonize(cells["Publisher"].value).replace('"', '')}}</publisher>
+            <place>
+               <placeTerm type="code" authority="marccountry">{{jsonize(cells["placeTerm"].value).replace('"', '')}}</placeTerm>
+            </place>
+      </originInfo>
+      <physicalDescription>
+         <internetMediaType>{{jsonize(cells["internetMediaType"].value).replace('"', '')}}</internetMediaType>
+      </physicalDescription>
+      <part>
+         <detail type="sheet number">
+            <number>{{jsonize(cells["Page number"].value).replace('"', '')}}</number>
+         </detail>
+      </part>
+      <language>    
+         <languageTerm authority="iso639-2b">{{jsonize(cells["languageTerm"].value).replace('"', '')}}</languageTerm>
+      </language>     
+      <subject authority="lcsh">
+         <geographic>{{jsonize(cells["geographic subject"].value).replace('"', '')}}</geographic>
+         <geographic>{{jsonize(cells["geographic subject2"].value).replace('"', '')}}</geographic>
+      </subject>
+      <subject authority="lctgm">
+         <topic>{{jsonize(cells["SubjectTopic-tgm1"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-tgm2"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-tgm3"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-tgm4"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-tgm5"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-tgm6"].value).replace('"', '')}}</topic>
+      </subject>
+      <accessCondition type="use and reproduction">{{jsonize(cells["accessCondition"].value).replace('"', '')}}</accessCondition>
+      <recordInfo>
+         <languageOfCataloging>
+            <languageTerm type="code" authority="iso639-2b">{{jsonize(cells["languageOfCataloging"].value).replace('"', '')}}</languageTerm>
+         </languageOfCataloging>   
+      </recordInfo>
+</mods>
+<!-- Don't put anything in Row Separator -->
+
+<!-- For Suffix -->
+
+</modsCollection>
