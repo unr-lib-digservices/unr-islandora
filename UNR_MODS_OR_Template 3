@@ -1,0 +1,86 @@
+ <!-- For Prefix -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+
+<!-- For Row Template -->
+
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+      <identifier>{{jsonize(cells["identifier"].value).replace('"', '')}}</identifier>
+      <titleInfo>
+         <title>{{jsonize(cells["titleInfo"].value).replace('"', '')}}</title>
+      </titleInfo>
+   <name authority="local">
+      <namePart>{{jsonize(cells["creator"].value).replace('"', '')}</namePart>
+      <role>
+         <roleTerm type="text">creator</roleTerm>
+      </role>
+   </name>
+   <name authority="local">
+      <namePart>{{jsonize(cells["contributor"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor2"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor3"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor4"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor5"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor6"].value).replace('"', '')}</namePart>
+      <role>
+         <roleTerm type="text">contributor</roleTerm>
+      </role>
+   </name>
+      <typeOfResource>{{jsonize(cells["typeOfResource"].value).replace('"', '')}}</typeOfResource>
+      <originInfo>
+            <dateIssued>{{jsonize(cells["dateIssued"].value).replace('"', '')}}</dateIssued>
+            <dateCaptured>{{jsonize(cells["dateDigital"].value).replace('"', '')}}</dateCaptured>
+            <publisher>{{jsonize(cells["publisher"].value).replace('"', '')}}</publisher>
+            <place>
+               <placeTerm type="code" authority="marccountry">{{jsonize(cells["placeTerm"].value).replace('"', '')}}</placeTerm>
+            </place>
+      </originInfo>
+      <physicalDescription>
+         <internetMediaType>{{jsonize(cells["internetMediaType"].value).replace('"', '')}}</internetMediaType>
+         <extent>{{jsonize(cells["extent"].value).replace('"', '')}}</extent>
+         <form>{{jsonize(cells["form"].value).replace('"', '')}}</form>
+         <digitalOrigin>{{jsonize(cells["digitalOrigin"].value).replace('"', '')}}</digitalOrigin>
+      </physicalDescription>
+      <note>{{jsonize(cells["note"].value).replace('"', '')}}</note>
+      <abstract>{{jsonize(cells["abstract"].value).replace('"', '')}}</abstract>
+
+      <language>    
+         <languageTerm authority="iso639-2b">{{jsonize(cells["languageTerm"].value).replace('"', '')}}</languageTerm>
+      </language>     
+      <subject authority="lcsh">
+         <topic>{{jsonize(cells["SubjectTopic-lcsh"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-lcsh2"].value).replace('"', '')}}</topic>
+         <topic>{{jsonize(cells["SubjectTopic-lcsh3"].value).replace('"', '')}}</topic>
+      </subject>
+   <subject authority="gsni">
+      <topic>{{jsonize(cells["SubjectTopic-gsni"].value).replace('"', '')}}</topic>
+      <topic>{{jsonize(cells["SubjectTopic-gsni2"].value).replace('"', '')}}</topic>
+      <topic>{{jsonize(cells["SubjectTopic-gsni3"].value).replace('"', '')}}</topic>
+   </subject>
+   <subject authority="local">
+      <topic>{{jsonize(cells["SubjectTopic-local"].value).replace('"', '')}}</topic>
+      <topic>{{jsonize(cells["SubjectTopic-local2"].value).replace('"', '')}}</topic>
+      <topic>{{jsonize(cells["SubjectTopic-local3"].value).replace('"', '')}}</topic>
+   </subject>
+   <subject authority="local">
+      <hierarchicalGeographic>
+         <area>{{jsonize(cells["Township"].value).replace('"', '')}}</area>
+      </hierarchicalGeographic>
+      <hierarchicalGeographic>
+         <area>{{jsonize(cells["Range"].value).replace('"', '')}}</area>
+      </hierarchicalGeographic>
+   </subject>
+      
+      <accessCondition type="use and reproduction">{{jsonize(cells["accessCondition"].value).replace('"', '')}}</accessCondition>
+      <recordInfo>
+         <languageOfCataloging>
+            <languageTerm type="code" authority="iso639-2b">{{jsonize(cells["languageOfCataloging"].value).replace('"', '')}}</languageTerm>
+         </languageOfCataloging>   
+      </recordInfo>
+</mods>
+<!-- Don't put anything in Row Separator -->
+
+<!-- For Suffix -->
+
+</modsCollection>
