@@ -11,18 +11,20 @@
          <title>{{jsonize(cells["titleInfo"].value).replace('"', '')}}</title>
       </titleInfo>
    <name authority="local">
-      <namePart>{{jsonize(cells["creator"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["creator"].value).replace('"', '')}}</namePart>
       <role>
          <roleTerm type="text">creator</roleTerm>
       </role>
    </name>
    <name authority="local">
-      <namePart>{{jsonize(cells["contributor"].value).replace('"', '')}</namePart>
-      <namePart>{{jsonize(cells["contributor2"].value).replace('"', '')}</namePart>
-      <namePart>{{jsonize(cells["contributor3"].value).replace('"', '')}</namePart>
-      <namePart>{{jsonize(cells["contributor4"].value).replace('"', '')}</namePart>
-      <namePart>{{jsonize(cells["contributor5"].value).replace('"', '')}</namePart>
-      <namePart>{{jsonize(cells["contributor6"].value).replace('"', '')}</namePart>
+      <namePart>{{jsonize(cells["contributor"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor2"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor3"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor4"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor5"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor6"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor7"].value).replace('"', '')}}</namePart>
+      <namePart>{{jsonize(cells["contributor8"].value).replace('"', '')}}</namePart>
       <role>
          <roleTerm type="text">contributor</roleTerm>
       </role>
